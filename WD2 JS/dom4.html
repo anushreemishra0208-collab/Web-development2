@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting</title>
+</head>
+<body>
+    <h1> Check Voting Eligibility</h1>
+<button id="checkEligibility">Check Eligibility</button>
+   
+    <script>
+        const button = document.getElementById("checkEligibility");
+        document.getElementById("checkEligibility").addEventListener("click", function() {
+            let age=Number(prompt("Enter your age:"));
+            if (age >= 18) {
+            alert("You are eligible to vote.");
+            } else {
+            alert("You are not eligible to vote.");
+            }
+        });
+            
+    </script>
+</body>
+</html>

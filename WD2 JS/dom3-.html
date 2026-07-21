@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello,students<br>check your results</h1>
+    <h3 id="msg"></h3>
+    <script>
+        function checkResults(){
+marks=Number(prompt("enter your marks"));
+if (marks>=35){
+    document.getElementById("msg").innerHTML = " You have passed.";
+} else {
+    document.getElementById("msg").innerHTML = "you have failed.";
+}
+        }
+        function showresults(){
+            let grade;
+            if (marks>=90){
+                grade="A+";
+            } else if (marks>=80){
+                grade="A";
+            } else if (marks>=70){
+                grade="B+";
+            } else if (marks>=60){
+                grade="B";
+            } else if (marks>=50){
+                grade="C";
+            } else if (marks>=35){
+                grade="D";
+            } else {
+                grade="F";
+            }
+            document.getElementById("msg").innerHTML = "Your grade is: " + grade;
+        }
+    
+
+    </script>
+<
+</body>
+</html>
